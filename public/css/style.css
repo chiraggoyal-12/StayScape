@@ -1,0 +1,206 @@
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container{
+  flex: 1;
+}
+
+/* Navbar */
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass{
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #121212 !important;
+}
+
+/* Footer */
+.f-info-links a{
+  text-decoration: none;
+  color: #222222;
+}
+
+.f-info-links a:hover{
+  text-decoration: underline;
+}
+
+.f-info-links, .f-info-socials, .f-info-brand{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i{
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+
+/* Cards */
+.listing-card{
+  border: none !important;
+  margin-bottom: 1rem; 
+}
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body{
+  padding: 0 !important;
+}
+
+.card-text p{
+  font-weight: 400 !important;
+}
+
+.listing-link{
+  text-decoration: none;
+}
+
+/* Card Effect */
+/* .card-img-overlay{
+  opacity: 0;
+}
+
+.card-img-overlay:hover{
+  opacity: 0.2;
+  background-color: white;
+} */
+
+/* Highlight only the card being hovered */
+.listing-card:hover {
+  transform: scale(1.10);
+  filter: brightness(100%);
+  z-index: 1;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 1rem;
+}
+
+
+/* New Page */
+.add-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.add-btn:hover {
+  transform: scale(1.10) !important;
+  filter: brightness(100%) !important;
+  z-index: 1 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important; 
+  background-color: #fe424d !important; /* a darker red */
+  cursor: pointer !important;
+}
+
+/* Edit Page */
+.edit-btn{
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.edit-btn:hover {
+  transform: scale(1.10) !important;
+  filter: brightness(100%) !important;
+  z-index: 1 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important; 
+  background-color: #fe424d !important; /* a darker red */
+  cursor: pointer !important;
+}
+
+/* Show Page */
+.show-img{
+  height: 38vh;
+  /* width: 30vh; */
+}
+
+.show-edit-btn {
+  background-color: #fe424d !important;
+  color: white;
+  border: none !important;
+  padding: 0.5rem 1.2rem !important;   /* slightly wider padding */
+  border-radius: 0.5rem;    /* optional: rounded corners */
+  font-weight: 500;         /* optional: better font weight */
+  font-size: 1rem;          /* optional: better scaling */
+}
+
+.show-edit-btn:hover {
+  transform: scale(1.10) !important;
+  filter: brightness(100%) !important;
+  z-index: 1 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important; 
+  background-color: #fe424d !important; /* a darker red */
+  cursor: pointer !important;
+}
+
+.show-delete-btn {
+  background-color: #fe424d !important;
+  color: white;
+  border: none !important;
+  padding: 0.5rem 1.2rem !important;   /* slightly wider padding */
+  border-radius: 0.5rem;    /* optional: rounded corners */
+  font-weight: 500;         /* optional: better font weight */
+  font-size: 1rem;          /* optional: better scaling */
+}
+
+.show-delete-btn:hover {
+  transform: scale(1.10) !important;
+  filter: brightness(100%) !important;
+  z-index: 1 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important; 
+  background-color: #fe424d !important; /* a darker red */
+  cursor: pointer !important;
+}
+
+/* Review Page */
+.review-submit-btn{
+  background-color: #fe424d !important;
+  color: white;
+  border: none !important;
+  padding: 0.5rem 1.2rem !important;   /* slightly wider padding */
+  border-radius: 0.5rem;    /* optional: rounded corners */
+  font-weight: 500;         /* optional: better font weight */
+  font-size: 1rem;          /* optional: better scaling */
+}
+
+.review-submit-btn:hover {
+  transform: scale(1.10) !important;
+  filter: brightness(100%) !important;
+  z-index: 1 !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2) !important; 
+  background-color: #fe424d !important; /* a darker red */
+  cursor: pointer !important;
+}
+
+.review-card{
+  border: none !important;
+}
+
+/* Map */
+#map { 
+  height: 400px;
+  width: 80vh;
+}
