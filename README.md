@@ -1,97 +1,75 @@
-# 🏡 StayScape
+# StayScape 🏡
 
-StayScape is a full-stack web application that allows users to browse, list, review, and manage travel property listings. It's built using the **MERN-style tech stack** (MongoDB, Express.js, Node.js, EJS), and includes features such as user authentication, image uploads, form validation, flash messaging, and more.
+StayScape is a full-stack web application that allows users to explore, create, edit, and review travel property listings. It includes features like user authentication, image uploads, interactive maps, flash messages, and form validations.
 
-## 🚀 Features
+## Features ✨
 
-* User Authentication (Sign up / Login / Logout)
-* CRUD Operations for Listings
-* Reviews with Ratings
-* Flash Messages for Success/Error
-* Responsive Design
-* Secure Session Handling
-* Image Upload with Cloudinary
-* Protected Routes (only logged-in users can create/edit/delete)
+* Create, update, delete listings
+* Add and remove reviews for listings
+* Authentication system with login & signup
+* Flash messages for feedback
+* Form validations (server-side)
+* Image uploads
+* Map integration
 
-## 🧠 Tech Stack
+## Technologies Used 💻
 
-* **Backend:** Node.js, Express.js, MongoDB, Mongoose
 * **Frontend:** EJS, HTML, CSS, JavaScript
-* **Authentication:** Passport.js, express-session
-* **File Uploads:** Multer, Cloudinary
-* **Validation:** JOI Schema Validation
-* **Utilities:** Method Override, Connect-Flash
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB with Mongoose
+* **Authentication:** Passport.js
+* **Templating Engine:** EJS-Mate
+* **Image Uploads:** Multer, Cloudinary
+* **Map Integration:** Mapbox
 
-## 📁 Project Structure
+## Project Structure 📁
 
-```bash
-StayScape/
+```
+STAYSCAPE
 │
-├── controllers/         # Logic for listings, users, and reviews
-├── models/              # Mongoose models (User, Listing, Review)
-├── routes/              # Express routes (listing.js, review.js, user.js)
-├── views/               # EJS views (includes, listings, users)
-│   ├── includes/        # Navbar, footer, flash messages
-│   ├── listings/        # CRUD pages for listings
-│   └── users/           # Login and signup pages
-├── public/              # Static assets (CSS, JS)
-├── utils/               # Custom utilities like ExpressError, wrapAsync
-├── init/                # DB seed scripts
-├── .env                 # Environment variables
-├── app.js               # Main entry point
-├── cloudConfig.js       # Cloudinary config
-├── middleware.js        # Custom middleware functions
-├── schema.js            # JOI validation schemas
-├── package.json
-└── README.md
+├── controllers       # Route logic for listings, reviews, users
+├── init              # Initialization and data seeding scripts
+├── models            # Mongoose models
+├── public            # Static files (CSS, JS)
+├── routes            # Express route handlers
+├── utils             # Custom utilities (e.g., ExpressError)
+├── views             # EJS templates
+│   ├── includes      # Partials like navbar, footer, flash
+│   ├── layouts       # Boilerplate layout file
+│   ├── listings      # Listing-related templates
+│   └── users         # Login and signup pages
+│
+├── .gitignore        # Files to be ignored by Git
+├── app.js            # Main server file
+├── cloudConfig.js    # Cloudinary configuration
+├── middleware.js     # Custom middlewares
+├── package.json      # Project metadata and dependencies
+├── schema.js         # Joi validation schemas
 ```
 
-## 🔐 Environment Variables
+## Setup Instructions 🚀
 
-Create a `.env` file in the root directory and add:
+1. **Clone the repository**
 
-```env
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_KEY=your_api_key
-CLOUDINARY_SECRET=your_api_secret
-```
+   ```bash
+   git clone https://github.com/your-username/StayScape.git
+   cd StayScape
+   ```
 
-> Make sure to never upload your `.env` to GitHub. It's already ignored in `.gitignore`.
+2. **Install dependencies**
 
-## 🧰 Seed the Database
+   ```bash
+   npm install
+   ```
 
-Run the seed script if needed:
+3. **Run the development server**
 
-```bash
-node init/index.js
-```
+   ```bash
+   node app.js
+   ```
 
-## ✅ Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/chiraggoyal-12/StayScape.git
-cd StayScape
-```
-
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Start the app:
-
-```bash
-nodemon app.js
-```
-
-Visit: [http://localhost:8080](http://localhost:8080)
-
-## 📸 Screenshots
-
-*Add your application screenshots here (optional).*
+4. **Access the app**
+   Open your browser and navigate to `http://localhost:8080`
 
 ## 🙌 Author
 
