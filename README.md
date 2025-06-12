@@ -38,8 +38,6 @@ STAYSCAPE
 │   ├── layouts       # Boilerplate layout file
 │   ├── listings      # Listing-related templates
 │   └── users         # Login and signup pages
-│
-├── .gitignore        # Files to be ignored by Git
 ├── app.js            # Main server file
 ├── cloudConfig.js    # Cloudinary configuration
 ├── middleware.js     # Custom middlewares
